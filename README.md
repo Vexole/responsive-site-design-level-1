@@ -1,1 +1,1 @@
-# responsive-site-design-level-1
+# Assignments for Responsive Site Design
