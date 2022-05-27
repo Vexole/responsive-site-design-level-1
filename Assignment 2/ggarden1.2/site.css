@@ -1,0 +1,55 @@
+h1, nav, footer {
+    font-family: 'Century Gothic, serif';
+}
+
+h2, h3, dt {
+    font-family: 'Gabriola, sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 400%;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h2, nav a {
+    color: rgb(35, 102, 12);
+}
+
+h1, nav, #copyright {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+header, footer {
+    background-color: rgb(65, 132, 42);
+    color: #eee;
+}
+
+footer {
+    font-size: smaller;
+}
+
+footer nav a {
+    color: #eee;
+}
+
+#copyright {
+    font-family: 'serif';
+    font-style: italic;
+}
