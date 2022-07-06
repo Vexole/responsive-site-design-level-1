@@ -1,0 +1,224 @@
+body,
+h1 {
+    margin: 0;
+}
+
+header {
+    background-image: url('./imgs/hand-grips-a-gardening-tool-to-cut-back-a-plant.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    float: left;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 1px rgb(20, 70, 20);
+}
+
+main {
+    border-left: 1px solid rgb(158, 194, 143);
+    overflow: hidden;
+}
+
+h1,
+nav,
+footer {
+    font-family: 'Century Gothic, serif';
+}
+
+h2,
+h3 {
+    font-family: 'Gabriola, sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 400%;
+    background-color: rgba(5, 72, 12, .5);
+}
+
+h1:hover {
+    text-shadow: 2px 2px 10px white;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #eee;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h2,
+nav a {
+    color: rgb(35, 102, 12);
+}
+
+h1,
+nav,
+#copyright {
+    text-align: center;
+}
+
+#heroimg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mobile {
+    display: none;
+}
+
+#wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+header,
+footer {
+    background-color: rgb(65, 132, 42);
+    color: #eee;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+#categories {
+    margin: 40px 0;
+}
+
+#categories section {
+    width: 50%;
+    float: left;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+#categories section img {
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    float: left;
+}
+
+#categories h3 {
+    margin-top: 0;
+}
+
+.item33 {
+    width: 33%;
+    float: left;
+}
+
+#multicol {
+    overflow: auto;
+}
+
+.item25 {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.icon {
+    display: block;
+    font-size: 3rem;
+    color: rgb(35, 102, 12);
+}
+
+footer {
+    font-size: smaller;
+    padding: 10px 10%;
+    margin-top: 20px;
+}
+
+footer nav a {
+    color: #eee;
+    display: block;
+    padding: 0;
+    text-align: left;
+}
+
+#copyright {
+    font-family: 'serif';
+    font-style: italic;
+    clear: both;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        float: none;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    footer nav li {
+        display: block;
+    }
+
+    #categories section {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .item25 {
+        width: 50%;
+    }
+
+    #categories img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    nav {
+        border-bottom: 1px solid rgb(158,194, 143);
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    footer .item33 {
+        float: none;
+        display: block;
+        padding-left: 40%;
+    }
+}
