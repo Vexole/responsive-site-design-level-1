@@ -1,0 +1,246 @@
+body,
+h1 {
+    margin: 0;
+}
+
+header {
+    background-image: url('./imgs/hand-grips-a-gardening-tool-to-cut-back-a-plant.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 1px rgb(20, 70, 20);
+}
+
+main {
+    border-left: 1px solid rgb(158, 194, 143);
+}
+
+h1,
+nav,
+footer {
+    font-family: 'Century Gothic, serif';
+}
+
+h2,
+h3 {
+    font-family: 'Gabriola, sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 400%;
+    background-color: rgba(5, 72, 12, .5);
+}
+
+h1:hover {
+    text-shadow: 2px 2px 10px white;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #eee;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h2,
+nav a {
+    color: rgb(35, 102, 12);
+}
+
+h1,
+nav,
+#copyright {
+    text-align: center;
+}
+
+#heroimg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mobile {
+    display: none;
+}
+
+#wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+header,
+footer {
+    background-color: rgb(65, 132, 42);
+    color: #eee;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+#categories {
+    display: grid;
+    margin: 40px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+#categories section {
+    margin-bottom: 20px;
+}
+
+#categories section img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#categories section:nth-of-type(2) {
+    grid-row: 1/3;
+}
+
+#categories h3 {
+    margin-top: 0;
+}
+
+.item25 {
+    width: 23%;
+    text-align: center;
+    box-shadow: 0px 0px 20px #eee;
+}
+
+.icon {
+    display: block;
+    font-size: 3rem;
+    color: rgb(35, 102, 12);
+}
+
+footer {
+    display: flex;
+    font-size: smaller;
+    padding: 10px 10%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.item33 {
+    flex-grow: 1;
+    padding-left: 10%;
+}
+
+footer nav a {
+    color: #eee;
+    display: block;
+    padding: 0;
+    text-align: left;
+}
+
+#copyright {
+    font-family: 'serif';
+    font-style: italic;
+    width: 100%;
+}
+
+#pagecontainer {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+header, footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+} 
+
+#multicol {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+    #pagecontainer {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    footer nav li {
+        display: block;
+    }
+
+    #categories section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #multicol {
+        flex-wrap: wrap;
+    }
+
+    .item25 {
+        width: 50%;
+    }
+    
+    #categories {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav {
+        border-bottom: 1px solid rgb(158,194, 143);
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    footer .item33 {
+        width: 100%;
+        display: block;
+        padding-left: 40%;
+    }
+}
